@@ -146,7 +146,7 @@ export default function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0); // Start at index 0 to show the first message immediately
   const [isLoading, setIsLoading] = useState(false);
-  const [started,] = useState(true); // Start as true to automatically begin the sequence
+  const started = true;
   const [showSequenciaInterativa, setShowSequenciaInterativa] = useState(false);
 
   useEffect(() => {

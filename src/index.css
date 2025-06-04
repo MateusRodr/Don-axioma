@@ -17,13 +17,35 @@ span{
   height: 20px;
 }
 
-body {
+img{
+  width: 320px;
+  height: 380px;
+}
+
+html, body {
+  height: 100%;
   margin: 0;
-  padding: 1rem;
+  padding: 0;
+  background-image: url('/img/backgraund.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+body {
+
+  margin: 0;
+  padding: 0.9rem;
   font-size: 16px;
   line-height: 1;
   color: inherit;
   text-align: center;
+  background-image: url('/img/backgraund.png');
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 body button{
@@ -163,5 +185,33 @@ button:focus-visible {
 
   a:hover {
     color: #747bff;
+  }
+}
+
+
+@media (max-width: 767px) {
+  img {
+    width: 90%;
+    height: auto;
+  }
+  .btn {
+    min-width: 120px;
+    padding: 8px 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  img {
+    width: 300px;
+    height: auto;
+  }
+  p{
+    font-size: 23px;
+  }
+  .btn22{
+    width: 152px;
+  }
+  .btn11{
+    width: 160px;
   }
 }

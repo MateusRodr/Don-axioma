@@ -46,11 +46,11 @@ function SequenciaInterativa() {
           Você encontrará dentro da obra 3 livros que te apresentarão aspectos e nuances diferentes dessa existência.
         </p>
         <p className="text-lg md:text-xl">Livro 1 - Códigos internos, a filosofia do sagaz...</p>
-        <img src="img/livro1.png" alt="Capa do Livro 1" className="w-full h-auto rounded-lg mt-4" />
+        <img src="img/livro1.png" alt="Capa do Livro 1" className="w-300 h-300 rounded-lg mt-4" />
         <p className="text-lg md:text-xl">Livro 2 - Bem-vindo à selva de pedras...</p>
-        <img src="img/livro2.png" alt="Capa do Livro 2" className="w-full h-auto rounded-lg mt-4" />
+        <img src="img/livro2.png" alt="Capa do Livro 2" className="w-300 h-300 rounded-lg mt-4" />
         <p className="text-lg md:text-xl">Livro 3 - Vivendo na trincheira e se municiando...</p>
-        <img src="img/livro3.png" alt="Capa do Livro 3" className="w-full h-auto rounded-lg mt-4" />
+        <img src="img/livro3.png" alt="Capa do Livro 3" className="w-300 h-300 rounded-lg mt-4" />
       </motion.div>
 
       <motion.div
@@ -62,13 +62,13 @@ function SequenciaInterativa() {
         <motion.button
           onClick={handleProximo}
           disabled={etapa > 1}
-          className={`px-6 py-3 border border-white rounded transition-all duration-300 ${
+          className={`btn22 px-6 py-3 border border-white rounded transition-all duration-300 ${
             etapa > 1
               ? 'bg-white text-black cursor-not-allowed opacity-70'
               : 'text-white hover:bg-white hover:text-black'
           }`}
         >
-          Entendi, continue
+          certo, continue
         </motion.button>
       </motion.div>
 
@@ -118,9 +118,9 @@ function SequenciaInterativa() {
             transition={{ duration: 0.5 }}
             className="bg-white text-black p-4 rounded w-full"
           >
-            <p className="text-lg md:text-xl mb-4">Você pode adquirir a obra agora mesmo...</p>
+            <p className="text-lg md:text-xl mb-4">Você pode adquirir a obra agora mesmo</p>
             <p className="text-base mb-4">
-              Se você sentir que Códigos do Exílio não te apresentou nada relevante...
+              Se você sentir que Códigos do Exílio não te apresentou nada relevante
             </p>
             <p className="text-lg md:text-xl mb-4">Faça sua compra agora no botão abaixo:</p>
           </motion.div>
@@ -158,12 +158,12 @@ function SequenciaInterativa() {
 export default function Home() {
   const frases = [
     'Bem-vindo à maldita trincheira 🥃',
-    'Aqui não encontrará promessas vazias...',
-    'O que você vai encontrar é um manual prático...',
-    'Algo que te obriga a olhar pras tuas fraquezas...',
-    'Se tornar sagaz vai muito além do que é visto...',
-    'Se você possui baixa resistência à frustração...',
-    'Mas se percebe que nessa vida ou você é esperto...',
+    'Aqui não encontrará promessas vazias',
+    'O que você vai encontrar é um manual prático',
+    'Algo que te obriga a olhar pras tuas fraquezas',
+    'Se tornar sagaz vai muito além do que é visto',
+    'Se você possui baixa resistência à frustração',
+    'Mas se percebe que nessa vida ou você é esperto',
     'Posso te apresentar os códigos?',
   ];
 
@@ -189,7 +189,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center space-y-6 p-6">
-      <div className="w-full max-w-2xl text-center space-y-6">
+      <div className="w-full max-w-full text-center space-y-6">
         {frases.slice(0, currentIndex + 1).map((frase, index) => (
           <motion.p
             key={index}
@@ -210,7 +210,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.0 }}
             onClick={() => setShowSequenciaInterativa(true)}
-            className="px-10 py-3 border border-white rounded hover:bg-white hover:text-black transition-all duration-300"
+            className="btn11 px-10 py-3 border border-white rounded hover:bg-white hover:text-black transition-all duration-300"
           >
             Sim, continue
           </motion.button>

@@ -6,33 +6,50 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
 a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+span{
+  width: 20px;
+  height: 20px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+body {
+  margin: 0;
+  padding: 1rem;
+  font-size: 16px;
+  line-height: 1;
+  color: inherit;
+  text-align: center;
+}
+
+body button{
+  text-align: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.gif {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+  animation: typing 1s steps(4) infinite;
+}
+
+p {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
 }
 
 button {
@@ -42,27 +59,109 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #3DADFF;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-left: 600px;
+
 }
+.two-buttons {
+  display: flex;
+  justify-content: center; /* Centraliza os botões */
+  gap: 10px; /* Reduz a distância entre os botões */
+  padding: 10px;
+}
+
+.btn {
+  margin: 0; /* Remove margens que podem estar alterando o espaçamento */
+  padding: 10px 20px; /* Ajusta o tamanho interno */
+  min-width: 150px;
+  text-align: center;
+}
+
+
+.typing-indicator {
+  background-color: rgba(255, 255, 255, 0.2); /* Apenas para teste */
+}
+
+
 button:hover {
-  border-color: #646cff;
+  border-color: #78798b;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Classe para alinhar botão à direita */
+.botao-direita {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.bouncing-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce-scale 1s infinite ease-in-out;
+}
+
+/* Define um pequeno atraso para cada bolinha */
+.bouncing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bouncing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce-scale {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-10px) scale(1.5);
+    opacity: 1;
+  }
+}
+@keyframes bounce-scale {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-10px) scale(1.5);
+    opacity: 1;
+  }
+}
+
+.bounce-scale {
+  animation: bounce-scale 1s infinite ease-in-out;
+}
+
+.bounce-scale-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.bounce-scale-delay-2 {
+  animation-delay: 0.4s;
+}
+
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #000;
   }
+
   a:hover {
     color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }

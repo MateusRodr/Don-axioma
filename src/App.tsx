@@ -1,7 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Swal from 'sweetalert2';
-
+import Livro1 from './img/livro1.png';
+import Livro2 from './img/livro2.png';
+import Livro3 from './img/livro3.png';
+import Depoimento from './img/depoimento2.png';
+import './App.css';
 // ✅ NOVO TypingIndicator com GIF
 // ✅ TypingIndicator atualizado com animação de "..."
 const TypingIndicator = () => (
@@ -46,11 +50,11 @@ function SequenciaInterativa() {
           Você encontrará dentro da obra 3 livros que te apresentarão aspectos e nuances diferentes dessa existência.
         </p>
         <p className="text-lg md:text-xl">Livro 1 - Códigos internos, a filosofia do sagaz...</p>
-        <img src="./img/livro1.png" alt="Capa do Livro 1" className="w-300 h-300 rounded-lg mt-4" />
+        <img src={Livro1} alt="Capa do Livro 1" className="w-300 h-300 rounded-lg mt-4" />
         <p className="text-lg md:text-xl">Livro 2 - Bem-vindo à selva de pedras...</p>
-        <img src="./img/livro2.png" alt="Capa do Livro 2" className="w-300 h-300 rounded-lg mt-4" />
+        <img src={Livro2} alt="Capa do Livro 2" className="w-300 h-300 rounded-lg mt-4" />
         <p className="text-lg md:text-xl">Livro 3 - Vivendo na trincheira e se municiando...</p>
-        <img src="./img/livro3.png" alt="Capa do Livro 3" className="w-300 h-300 rounded-lg mt-4" />
+        <img src={Livro3} alt="Capa do Livro 3" className="w-300 h-300 rounded-lg mt-4" />
       </motion.div>
 
       <motion.div
@@ -83,7 +87,7 @@ function SequenciaInterativa() {
             <p className="text-lg md:text-xl mb-4">
               Porque vai chegar um ponto em que fingir força não será mais suficiente...
             </p>
-            <img src="./img/depoimento2.png" alt="Depoimento" className="w-full h-auto rounded-lg mt-4" />
+            <img src={Depoimento} alt="Depoimento" className="w-full h-auto rounded-lg mt-4" />
             <p className="text-lg md:text-xl">Você está pronto para evoluir e adquirir os códigos?</p>
           </motion.div>
 <motion.div

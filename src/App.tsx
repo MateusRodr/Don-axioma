@@ -46,11 +46,11 @@ function SequenciaInterativa() {
           Você encontrará dentro da obra 3 livros que te apresentarão aspectos e nuances diferentes dessa existência.
         </p>
         <p className="text-lg md:text-xl">Livro 1 - Códigos internos, a filosofia do sagaz...</p>
-        <img src="/img/livro1.png" alt="Capa do Livro 1" className="w-300 h-300 rounded-lg mt-4" />
+        <img src="./img/livro1.png" alt="Capa do Livro 1" className="w-300 h-300 rounded-lg mt-4" />
         <p className="text-lg md:text-xl">Livro 2 - Bem-vindo à selva de pedras...</p>
-        <img src="/img/livro2.png" alt="Capa do Livro 2" className="w-300 h-300 rounded-lg mt-4" />
+        <img src="./img/livro2.png" alt="Capa do Livro 2" className="w-300 h-300 rounded-lg mt-4" />
         <p className="text-lg md:text-xl">Livro 3 - Vivendo na trincheira e se municiando...</p>
-        <img src="/img/livro3.png" alt="Capa do Livro 3" className="w-300 h-300 rounded-lg mt-4" />
+        <img src="./img/livro3.png" alt="Capa do Livro 3" className="w-300 h-300 rounded-lg mt-4" />
       </motion.div>
 
       <motion.div
@@ -83,7 +83,7 @@ function SequenciaInterativa() {
             <p className="text-lg md:text-xl mb-4">
               Porque vai chegar um ponto em que fingir força não será mais suficiente...
             </p>
-            <img src="/img/depoimento2.png" alt="Depoimento" className="w-full h-auto rounded-lg mt-4" />
+            <img src="./img/depoimento2.png" alt="Depoimento" className="w-full h-auto rounded-lg mt-4" />
             <p className="text-lg md:text-xl">Você está pronto para evoluir e adquirir os códigos?</p>
           </motion.div>
 <motion.div
